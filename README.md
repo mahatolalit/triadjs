@@ -10,6 +10,8 @@
 ## About
 
 **TriadJS** is a unified wrapper library for [Three.js](https://threejs.org/), [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/), and [Drei](https://docs.pmnd.rs/drei/). It provides a single, easy-to-use API for building complex, interactive 3D applications in React, supporting both declarative (JSX) and imperative (raw Three.js) approaches. No more juggling multiple imports or boilerplate setup—TriadJS streamlines your 3D workflow.
+
+> **Exports:** You can import submodules directly, e.g. `import { Canvas } from "triadjs-core/fiber"` or `import { useAnimate } from "triadjs-core/hooks"`.
 ## Contributions
 
 Contributions, issues, and feature requests are welcome!
@@ -42,18 +44,22 @@ Repo: [https://github.com/mahatolalit/triadjs](https://github.com/mahatolalit/tr
 
 ## Installation & Getting Started
 
-1. **Install dependencies:**
-    ```sh
-    npm install --workspaces
-    ```
-2. **Build the core package:**
+1. **Install peer dependencies:**
+   ```sh
+   npm install react react-dom three @react-three/fiber @react-three/drei
+   ```
+2. **Install TriadJS Core:**
+   ```sh
+   npm install triadjs-core
+   ```
+3. **(Monorepo only) Build the core package:**
    ```sh
    npm run build --workspace=triadjs-core
    ```
-3. **Run the example app:**
-    ```sh
-    npm run start --workspace=examples/basic-app
-    ```
+4. **Run the example app:**
+   ```sh
+   npm run start --workspace=examples/basic-app
+   ```
 
 ---
 

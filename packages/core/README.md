@@ -16,7 +16,6 @@
 
 ## Features
 
-- **All-in-One Install:** Installs Three.js, R3F, Drei, and React automatically.
 - **Unified Import:** Access Three.js, R3F, and Drei from a single package.
 - **Declarative + Imperative:** Use React-style JSX and drop raw Three.js objects into scenes with custom hooks.
 - **Animation Helpers:** Simplified animation with `useAnimate` (wrapper around R3F's `useFrame`).
@@ -68,6 +67,7 @@ function App() {
 ---
 
 
+
 ## API
 
 - `three` — All Three.js exports
@@ -76,6 +76,8 @@ function App() {
 - `useThreeObject(createObject, deps)` — Imperatively add a raw Three.js object to the scene
 - `useAnimate(callback)` — Animation helper (wrapper around R3F's `useFrame`)
 - `addToScene(object, add)` — Imperatively add/remove objects to the scene
+
+> **Exports:** You can import submodules directly, e.g. `import { Canvas } from "triadjs-core/fiber"` or `import { useAnimate } from "triadjs-core/hooks"`.
 
 ### Example: Imperative Three.js Object
 
