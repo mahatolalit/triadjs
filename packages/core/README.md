@@ -99,6 +99,15 @@ MIT
 ---
 
 
+
+## Contributions
+
+Contributions, issues, and feature requests are welcome!
+
+Repo: [https://github.com/mahatolalit/triadjs](https://github.com/mahatolalit/triadjs)
+
+---
+
 ## Acknowledgements
 
 - [Three.js](https://threejs.org/) — The core WebGL 3D engine
