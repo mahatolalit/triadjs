@@ -1,14 +1,16 @@
 
 
+
 # TriadJS Core
 
-> **A seamless bridge between Three.js, React Three Fiber, and Drei — all in one import.**
+> **A unified wrapper for Three.js, React Three Fiber, and Drei — all in one import.**
 
 ---
 
-## Overview
 
-**TriadJS Core** is a developer-friendly npm package that unifies [Three.js](https://threejs.org/), [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/), and [Drei](https://docs.pmnd.rs/drei/) into a single, easy-to-use API. Build complex, interactive 3D applications in React with both declarative (JSX) and imperative (raw Three.js) approaches—no more juggling multiple imports or boilerplate setup.
+## About
+
+**TriadJS Core** is a unified wrapper npm package for [Three.js](https://threejs.org/), [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/), and [Drei](https://docs.pmnd.rs/drei/). It provides a single, easy-to-use API for building complex, interactive 3D applications in React, supporting both declarative (JSX) and imperative (raw Three.js) approaches. No more juggling multiple imports or boilerplate setup—TriadJS Core streamlines your 3D workflow.
 
 ---
 
