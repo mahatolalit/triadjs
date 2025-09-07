@@ -1,6 +1,6 @@
 {
   "name": "triadjs-core",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,13 @@
     "build": "vite build",
     "test": "jest"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": ">=18.0.0 <20.0.0",
+    "react-dom": ">=18.0.0 <20.0.0",
+    "three": ">=0.150.0 <1.0.0",
+    "@react-three/fiber": ">=9.0.0 <10.0.0",
+    "@react-three/drei": ">=10.0.0 <11.0.0"
+  },
   "devDependencies": {
     "typescript": "^5.9.2",
     "@testing-library/jest-dom": "^6.8.0",
@@ -24,10 +30,23 @@
     "vite": "^7.1.4",
     "vite-plugin-dts": "^4.5.4"
   },
-  "dependencies": {
-    "@react-three/drei": "^10.7.4",
-    "@react-three/fiber": "^9.3.0",
-    "react": "^19.1.1",
-    "three": "^0.180.0"
-  }
+  "dependencies": {},
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./fiber": {
+      "import": "./dist/core/index.es.js",
+      "require": "./dist/core/index.umd.js",
+      "types": "./dist/core/index.d.ts"
+    },
+    "./hooks": {
+      "import": "./dist/hooks/index.es.js",
+      "require": "./dist/hooks/index.umd.js",
+      "types": "./dist/hooks/index.d.ts"
+    }
+  },
+  "sideEffects": false
 }
