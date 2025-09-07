@@ -1,0 +1,8 @@
+{
+  "name": "triadjs-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}
